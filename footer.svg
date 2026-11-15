@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" width="100%">
+<defs><linearGradient id="f1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset=".5" stop-color="#6366F1"/><stop offset="1" stop-color="#34D399"/></linearGradient></defs>
+<style>@keyframes tw{0%,100%{opacity:.55}50%{opacity:1}}.t{animation:tw 2.6s ease-in-out infinite;font-family:'Courier New',monospace}</style>
+<path fill="url(#f1)" opacity=".35" d="M0 50 Q225 10 450 50 T900 50 V150 H0Z"><animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 50 Q225 10 450 50 T900 50 V150 H0Z;M0 50 Q225 90 450 50 T900 50 V150 H0Z;M0 50 Q225 10 450 50 T900 50 V150 H0Z"/></path>
+<path fill="url(#f1)" opacity=".6" d="M0 72 Q225 42 450 72 T900 72 V150 H0Z"><animate attributeName="d" dur="6s" repeatCount="indefinite" values="M0 72 Q225 42 450 72 T900 72 V150 H0Z;M0 72 Q225 102 450 72 T900 72 V150 H0Z;M0 72 Q225 42 450 72 T900 72 V150 H0Z"/></path>
+<path fill="#060B1A" d="M0 96 Q225 74 450 96 T900 96 V150 H0Z"><animate attributeName="d" dur="5s" repeatCount="indefinite" values="M0 96 Q225 74 450 96 T900 96 V150 H0Z;M0 96 Q225 118 450 96 T900 96 V150 H0Z;M0 96 Q225 74 450 96 T900 96 V150 H0Z"/></path>
+<text class="t" x="450" y="128" text-anchor="middle" fill="#67E8F9" font-size="16" font-weight="bold" letter-spacing="6">CODE · BUILD · DEPLOY</text></svg>

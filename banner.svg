@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#060B1A"/><stop offset="1" stop-color="#0B1230"/></linearGradient>
+<linearGradient id="ac" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22D3EE"/><stop offset="0.5" stop-color="#A78BFA"/><stop offset="1" stop-color="#34D399"/>
+<animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="8s" repeatCount="indefinite"/></linearGradient>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="38"/></filter>
+<pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#334155" opacity=".55"/></pattern>
+<clipPath id="c"><rect width="900" height="280" rx="18"/></clipPath>
+</defs>
+<style>
+.s{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif} .m{font-family:'Courier New',Courier,monospace}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes spinr{to{transform:rotate(-360deg)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.15}}
+.u1{animation:up .8s ease-out both} .u2{animation:up .8s .25s ease-out both} .u3{animation:up .8s .5s ease-out both} .u4{animation:up .8s .75s ease-out both}
+.fl{animation:float 5s ease-in-out infinite}
+.sp{transform-box:view-box;transform-origin:700px 140px;animation:spin 22s linear infinite}
+.spr{transform-box:view-box;transform-origin:700px 140px;animation:spinr 14s linear infinite}
+.bk{animation:blink 1.4s infinite}
+</style>
+<g clip-path="url(#c)">
+<rect width="900" height="280" fill="url(#bg)"/>
+<rect width="900" height="280" fill="url(#dots)"/>
+<g filter="url(#blur)">
+<circle cx="120" cy="60" r="90" fill="#22D3EE" opacity=".30"><animate attributeName="cx" values="120;260;120" dur="14s" repeatCount="indefinite"/><animate attributeName="cy" values="60;180;60" dur="11s" repeatCount="indefinite"/></circle>
+<circle cx="520" cy="240" r="100" fill="#A78BFA" opacity=".30"><animate attributeName="cx" values="520;380;520" dur="12s" repeatCount="indefinite"/><animate attributeName="cy" values="240;120;240" dur="15s" repeatCount="indefinite"/></circle>
+<circle cx="780" cy="50" r="90" fill="#34D399" opacity=".26"><animate attributeName="cx" values="780;640;780" dur="13s" repeatCount="indefinite"/></circle>
+</g>
+<g class="u1"><rect x="48" y="40" width="212" height="28" rx="14" fill="#0F172A" stroke="#1E293B"/>
+<circle cx="68" cy="54" r="4.5" fill="#34D399"><animate attributeName="opacity" values="1;.2;1" dur="1.4s" repeatCount="indefinite"/></circle>
+<text x="82" y="58.5" class="m" fill="#94A3B8" font-size="11.5" font-weight="bold" letter-spacing="1.6">AVAILABLE · BUILDING</text></g>
+<g class="u2"><text x="48" y="136" class="s" font-size="58" font-weight="800" fill="#F8FAFC" letter-spacing="3">LELEKRECING</text></g>
+<rect x="48" y="152" width="150" height="5" rx="2.5" fill="url(#ac)"><animate attributeName="width" values="150;330;150" dur="5s" repeatCount="indefinite"/></rect>
+<g class="u3"><text x="48" y="196" class="s" font-size="21" font-weight="600" fill="#67E8F9">Web &amp; Mobile Developer</text></g>
+<g class="u4"><text x="48" y="228" class="m" font-size="14" fill="#94A3B8">PHP · Laravel · CodeIgniter · Node.js · Flutter</text></g>
+<g class="fl">
+<g class="sp"><circle cx="700" cy="140" r="96" fill="none" stroke="url(#ac)" stroke-width="2" stroke-dasharray="3 12" stroke-linecap="round"/>
+<circle cx="796" cy="140" r="6" fill="#22D3EE"/><circle cx="604" cy="140" r="4" fill="#34D399"/></g>
+<g class="spr"><circle cx="700" cy="140" r="68" fill="none" stroke="#A78BFA" stroke-width="1.5" stroke-dasharray="22 14" opacity=".7"/>
+<circle cx="700" cy="72" r="5" fill="#A78BFA"/></g>
+<circle cx="700" cy="140" r="44" fill="#0B1230" stroke="url(#ac)" stroke-width="2.5"/>
+<path d="M683 126L668 140L683 154" fill="none" stroke="#22D3EE" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M717 126L732 140L717 154" fill="none" stroke="#34D399" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="705" y1="122" x2="695" y2="158" stroke="#A78BFA" stroke-width="5" stroke-linecap="round"/>
+</g>
+<g class="m" font-size="15" font-weight="bold" opacity=".55">
+<text x="590" y="48" fill="#22D3EE"><animate attributeName="y" values="48;38;48" dur="4s" repeatCount="indefinite"/>&lt;/&gt;</text>
+<text x="830" y="70" fill="#A78BFA"><animate attributeName="y" values="70;82;70" dur="5s" repeatCount="indefinite"/>{ }</text>
+<text x="820" y="236" fill="#34D399"><animate attributeName="y" values="236;224;236" dur="4.5s" repeatCount="indefinite"/>$_</text>
+<text x="585" y="238" fill="#22D3EE"><animate attributeName="y" values="238;250;238" dur="5.5s" repeatCount="indefinite"/>=&gt;</text>
+</g>
+</g>
+<rect x="1.5" y="1.5" width="897" height="277" rx="17" fill="none" stroke="url(#ac)" stroke-width="2"/>
+</svg>
