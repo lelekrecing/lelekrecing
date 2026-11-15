@@ -1,0 +1,41 @@
+<div align="center">
+
+<img src="./banner.svg" alt="LELEKRECING" width="100%" />
+
+<img src="./typing.svg" alt="Skills" width="100%" />
+
+<a href="https://github.com/lelekrecing?tab=repositories"><img src="./btn-repo.svg" alt="Repositories" height="48" /></a>
+&nbsp;<a href="mailto:nandagitaapril@gmail.com"><img src="./btn-email.svg" alt="Email" height="48" /></a>
+&nbsp;<a href="https://instagram.com/nnda.gita"><img src="./btn-ig.svg" alt="Instagram" height="48" /></a>
+&nbsp;<a href="https://www.tiktok.com/@nnda.gita"><img src="./btn-tiktok.svg" alt="TikTok" height="48" /></a>
+
+<br/><br/>
+
+<img src="./about.svg" alt="Developer Command Center" width="100%" />
+
+<br/>
+
+### ⚡ Tech Stack
+
+<img src="./stack.svg" alt="PHP, Laravel, CodeIgniter, Node.js, JavaScript, Flutter, Dart, MySQL, PostgreSQL" width="100%" />
+
+<br/>
+
+### 🔥 Featured Projects
+
+<table width="100%">
+<tr>
+<td width="50%"><a href="https://github.com/lelekrecing/simerahkoja"><img src="./proj-simerahkoja.svg" alt="simerahkoja" width="100%"/></a></td>
+<td width="50%"><a href="https://github.com/lelekrecing/monitoring_pln"><img src="./proj-monitoring_pln.svg" alt="monitoring_pln" width="100%"/></a></td>
+</tr>
+<tr>
+<td width="50%"><a href="https://github.com/lelekrecing/Aplikasi-Pengaduan-Masyarakat"><img src="./proj-Aplikasi-Pengaduan-Masyarakat.svg" alt="Aplikasi-Pengaduan-Masyarakat" width="100%"/></a></td>
+<td width="50%"><a href="https://github.com/lelekrecing/spk"><img src="./proj-spk.svg" alt="spk" width="100%"/></a></td>
+</tr>
+</table>
+
+<br/>
+
+<img src="./footer.svg" alt="Code Build Deploy" width="100%" />
+
+</div>
