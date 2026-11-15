@@ -1,11 +1,11 @@
 <div align="center">
 
-  <!-- 1. ANIMATED CYBER HEADER BANNER (100% GitHub Camo Compatible) -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,40:0F172A,80:1D4ED8,100:06B6D4&height=230&section=header&text=LELEKRECING&fontSize=52&fontColor=38BDF8&animation=fadeIn&fontAlignY=36&desc=Fullstack%20Web%20%26%20Mobile%20Developer%20%E2%80%A2%20System%20Architect&descAlignY=58&descSize=17" width="100%" />
+  <!-- 1. ANIMATED CYBER HEADER BANNER -->
+  <img src="./assets/banner.svg" alt="LELEKRECING Banner" width="100%" />
 
   <!-- 2. ANIMATED TERMINAL TYPING SVG -->
   <a href="https://github.com/lelekrecing">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=2500&pause=800&color=38BDF8&center=true&vCenter=true&width=680&lines=%3E_SYSTEM_ONLINE+%3A%3A+ID_LELEKRECING+%F0%9F%9A%80;Backend+Mastery+%3A+PHP+%E2%80%A2+Laravel+%E2%80%A2+Node.js+%E2%9A%A1;Mobile+Engineering+%3A+Flutter+%26+Dart+%F0%9F%93%B1;Database+Architect+%3A+MySQL+%26+PostgreSQL+%F0%9F%97%84%EF%B8%8F" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&duration=2500&pause=800&color=38BDF8¢er=true&vCenter=true&width=680&lines=%3E_SYSTEM_ONLINE+%3A%3A+ID_LELEKRECING+%F0%9F%9A%80;Backend+Mastery+%3A+PHP+%E2%80%A2+Laravel+%E2%80%A2+Node.js+%E2%9A%A1;Mobile+Engineering+%3A+Flutter+%26+Dart+%F0%9F%93%B1;Database+Architect+%3A+MySQL+%26+PostgreSQL+%F0%9F%97%84%EF%B8%8F" alt="Typing SVG" />
   </a>
 
   <br/>
@@ -107,5 +107,5 @@
 
 <!-- ANIMATED FOOTER WAVE -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:1D4ED8,100:020617&height=130&section=footer&text=CODE%20%E2%80%A2%20BUILD%20%E2%80%A2%20DEPLOY&fontSize=20&fontColor=38BDF8&animation=twinkling&fontAlignY=68" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,50:1D4ED8,100:020617&height=130§ion=footer&text=CODE%20%E2%80%A2%20BUILD%20%E2%80%A2%20DEPLOY&fontSize=20&fontColor=38BDF8&animation=twinkling&fontAlignY=68" width="100%" />
 </div>
