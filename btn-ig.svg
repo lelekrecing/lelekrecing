@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182 48" width="182" height="48">
-<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F43F5E"/><stop offset="1" stop-color="#F59E0B"/></linearGradient></defs>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#DC2626"/><stop offset="1" stop-color="#F97316"/></linearGradient></defs>
 <style>@keyframes sh{0%{transform:translateX(-60px)}100%{transform:translateX(242px)}}.sh{animation:sh 3.2s ease-in-out infinite}</style>
 <clipPath id="k"><rect width="182" height="48" rx="24"/></clipPath>
 <rect width="182" height="48" rx="24" fill="url(#g)"/>
