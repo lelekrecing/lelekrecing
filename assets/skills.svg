@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="220">
+  <style>
+    .mono { font-family: 'Courier New', Courier, monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, Helvetica, sans-serif; font-weight: bold; }
+    @keyframes pulseBar {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.65; }
+    }
+    .bar { animation: pulseBar 2.5s ease-in-out infinite; }
+  </style>
+
+  <rect width="900" height="220" rx="10" fill="#050D1A" stroke="#1E3A5F" stroke-width="1.5" />
+  <text x="25" y="32" fill="#38BDF8" font-size="13" font-weight="bold" letter-spacing="1.5" class="mono">⚡ CORE ARSENAL // WEB, MOBILE & DATABASE SYSTEMS</text>
+  <line x1="25" y1="44" x2="875" y2="44" stroke="#1E3A5F" stroke-width="1" />
+
+  <!-- ROW 1 -->
+  <g transform="translate(25, 58)">
+    <rect width="200" height="66" rx="6" fill="#0A192F" stroke="#777BB4" stroke-width="1.2" />
+    <text x="16" y="26" fill="#FFFFFF" font-size="14" class="sans">PHP 8+</text>
+    <text x="135" y="26" fill="#A5B4FC" font-size="11" class="mono">BACKEND</text>
+    <rect x="16" y="42" width="168" height="8" rx="4" fill="#1E293B" />
+    <rect x="16" y="42" width="156" height="8" rx="4" fill="#777BB4" class="bar" />
+  </g>
+
+  <g transform="translate(241, 58)">
+    <rect width="200" height="66" rx="6" fill="#0A192F" stroke="#FF2D20" stroke-width="1.2" />
+    <text x="16" y="26" fill="#FFFFFF" font-size="14" class="sans">Laravel</text>
+    <text x="125" y="26" fill="#FCA5A5" font-size="11" class="mono">FRAMEWORK</text>
+    <rect x="16" y="42" width="168" height="8" rx="4" fill="#1E293B" />
+    <rect x="16" y="42" width="160" height="8" rx="4" fill="#FF2D20" class="bar" />
+  </g>
+
+  <g transform="translate(458, 58)">
+    <rect width="200" height="66" rx="6" fill="#0A192F" stroke="#F7DF1E" stroke-width="1.2" />
+    <text x="16" y="26" fill="#FFFFFF" font-size="14" class="sans">JavaScript</text>
+    <text x="135" y="26" fill="#FEF08A" font-size="11" class="mono">ES6+ WEB</text>
+    <rect x="16" y="42" width="168" height="8" rx="4" fill="#1E293B" />
+    <rect x="16" y="42" width="148" height="8" rx="4" fill="#F7DF1E" class="bar" />
+  </g>
+
+  <g transform="translate(675, 58)">
+    <rect width="200" height="66" rx="6" fill="#0A192F" stroke="#339933" stroke-width="1.2" />
+    <text x="16" y="26" fill="#FFFFFF" font-size="14" class="sans">Node.js</text>
+    <text x="135" y="26" fill="#86EFAC" font-size="11" class="mono">RUNTIME</text>
+    <rect x="16" y="42" width="168" height="8" rx="4" fill="#1E293B" />
+    <rect x="16" y="42" width="142" height="8" rx="4" fill="#339933" class="bar" />
+  </g>
+
+  <!-- ROW 2 -->
+  <g transform="translate(25, 138)">
+    <rect width="200" height="66" rx="6" fill="#0A192F" stroke="#38BDF8" stroke-width="1.2" />
+    <text x="16" y="26" fill="#FFFFFF" font-size="14" class="sans">Flutter</text>
+    <text x="140" y="26" fill="#7DD3FC" font-size="11" class="mono">MOBILE</text>
+    <rect x="16" y="42" width="168" height="8" rx="4" fill="#1E293B" />
+    <rect x="16" y="42" width="150" height="8" rx="4" fill="#38BDF8" class="bar" />
+  </g>
+
+  <g transform="translate(241, 138)">
+    <rect width="200" height="66" rx="6" fill="#0A192F" stroke="#0175C2" stroke-width="1.2" />
+    <text x="16" y="26" fill="#FFFFFF" font-size="14" class="sans">Dart</text>
+    <text x="125" y="26" fill="#93C5FD" font-size="11" class="mono">LANGUAGE</text>
+    <rect x="16" y="42" width="168" height="8" rx="4" fill="#1E293B" />
+    <rect x="16" y="42" width="146" height="8" rx="4" fill="#0175C2" class="bar" />
+  </g>
+
+  <g transform="translate(458, 138)">
+    <rect width="200" height="66" rx="6" fill="#0A192F" stroke="#F29111" stroke-width="1.2" />
+    <text x="16" y="26" fill="#FFFFFF" font-size="14" class="sans">MySQL</text>
+    <text x="130" y="26" fill="#FDBA74" font-size="11" class="mono">DATABASE</text>
+    <rect x="16" y="42" width="168" height="8" rx="4" fill="#1E293B" />
+    <rect x="16" y="42" width="158" height="8" rx="4" fill="#F29111" class="bar" />
+  </g>
+
+  <g transform="translate(675, 138)">
+    <rect width="200" height="66" rx="6" fill="#0A192F" stroke="#336791" stroke-width="1.2" />
+    <text x="16" y="26" fill="#FFFFFF" font-size="14" class="sans">PostgreSQL</text>
+    <text x="130" y="26" fill="#93C5FD" font-size="11" class="mono">DATABASE</text>
+    <rect x="16" y="42" width="168" height="8" rx="4" fill="#1E293B" />
+    <rect x="16" y="42" width="152" height="8" rx="4" fill="#336791" class="bar" />
+  </g>
+</svg>
