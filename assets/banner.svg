@@ -1,119 +1,167 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" width="100%" height="260">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="280">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#040B16" />
-      <stop offset="50%" stop-color="#0A192F" />
-      <stop offset="100%" stop-color="#061124" />
+    <linearGradient id="spaceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="50%" stop-color="#081428" />
+      <stop offset="100%" stop-color="#040B1A" />
     </linearGradient>
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B1D3A" stop-opacity="0.9" />
-      <stop offset="100%" stop-color="#061226" stop-opacity="0.9" />
+    <linearGradient id="hudCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1D3A" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#051024" stop-opacity="0.92" />
     </linearGradient>
-    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E3A5F" stroke-width="0.6" stroke-opacity="0.4" />
+    <linearGradient id="beamLight" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.55" />
+      <stop offset="60%" stop-color="#38BDF8" stop-opacity="0.18" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="scanBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38BDF8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
+    </linearGradient>
+    <pattern id="gridPattern" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#1E3A8A" stroke-width="0.6" stroke-opacity="0.35" />
     </pattern>
   </defs>
 
-  <style>
-    .mono { font-family: 'Courier New', Courier, monospace; }
-    .title { font-family: 'Segoe UI', Roboto, Helvetica, sans-serif; font-weight: 900; }
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-    }
-    @keyframes blink {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.15; }
-    }
-    @keyframes beamPulse {
-      0%, 100% { opacity: 0.25; }
-      50% { opacity: 0.55; }
-    }
-    @keyframes barLoad {
-      0% { width: 10px; }
-      50% { width: 75px; }
-      100% { width: 10px; }
-    }
-    .astronaut { animation: float 3.5s ease-in-out infinite; }
-    .blink-dot { animation: blink 1.2s infinite; }
-    .star-1 { animation: blink 2.2s infinite; }
-    .star-2 { animation: blink 3.1s infinite; }
-    .beam { animation: beamPulse 2.5s ease-in-out infinite; }
-    .pwr-bar { animation: barLoad 4s ease-in-out infinite; }
-  </style>
+  <!-- Background & Cyber Grid -->
+  <rect width="900" height="280" rx="12" fill="url(#spaceBg)" />
+  <rect width="900" height="280" rx="12" fill="url(#gridPattern)" />
 
-  <!-- Background & Grid -->
-  <rect width="900" height="260" rx="10" fill="url(#bgGrad)" />
-  <rect width="900" height="260" rx="10" fill="url(#cyberGrid)" />
+  <!-- Animated Vertical Scanline -->
+  <rect x="0" y="0" width="900" height="3" fill="url(#scanBar)">
+    <animate attributeName="y" values="12;268;12" dur="7s" repeatCount="indefinite" />
+  </rect>
 
-  <!-- Outer HUD Border & Corner Brackets (Persis Gaya Akid) -->
-  <rect x="14" y="14" width="872" height="232" fill="none" stroke="#1E3A5F" stroke-width="1.2" />
-  <path d="M 10 34 L 10 10 L 34 10" fill="none" stroke="#38BDF8" stroke-width="2.5" />
-  <path d="M 866 10 L 890 10 L 890 34" fill="none" stroke="#38BDF8" stroke-width="2.5" />
-  <path d="M 10 226 L 10 250 L 34 250" fill="none" stroke="#38BDF8" stroke-width="2.5" />
-  <path d="M 866 250 L 890 250 L 890 226" fill="none" stroke="#38BDF8" stroke-width="2.5" />
+  <!-- Outer HUD Frame & Corner Brackets -->
+  <rect x="14" y="14" width="872" height="252" fill="none" stroke="#1E3A5F" stroke-width="1.2" />
+  <path d="M 10 36 L 10 10 L 36 10" fill="none" stroke="#38BDF8" stroke-width="2.5" />
+  <path d="M 864 10 L 890 10 L 890 36" fill="none" stroke="#38BDF8" stroke-width="2.5" />
+  <path d="M 10 244 L 10 270 L 36 270" fill="none" stroke="#38BDF8" stroke-width="2.5" />
+  <path d="M 864 270 L 890 270 L 890 244" fill="none" stroke="#38BDF8" stroke-width="2.5" />
 
-  <!-- Top Telemetry Bar -->
+  <!-- Top Telemetry Status Bar -->
   <line x1="14" y1="44" x2="886" y2="44" stroke="#1E3A5F" stroke-width="1" />
-  <circle cx="32" cy="29" r="4" fill="#22C55E" class="blink-dot" />
-  <text x="45" y="33" fill="#94A3B8" font-size="11" font-weight="bold" letter-spacing="1.5" class="mono">[ CODENAME : LELEKRECING ]</text>
-  <text x="275" y="33" fill="#FACC15" font-size="11" font-weight="bold" letter-spacing="1.5" class="mono">★ TECH ARSENAL: 08 STACKS</text>
-  <text x="515" y="33" fill="#94A3B8" font-size="11" font-weight="bold" letter-spacing="1.5" class="mono">SYSTEMS: v2.6</text>
-  <text x="655" y="33" fill="#38BDF8" font-size="11" font-weight="bold" letter-spacing="1.5" class="mono">MISSION: SIMERAH KOJA & PLN</text>
+  <circle cx="30" cy="29" r="4.5" fill="#22C55E">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite" />
+  </circle>
+  <text x="44" y="33" fill="#94A3B8" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="1.5">[ CODENAME : LELEKRECING ]</text>
+  <text x="275" y="33" fill="#FACC15" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="1.5">★ ARSENAL: 08 CORE STACKS</text>
+  <text x="520" y="33" fill="#94A3B8" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="1.5">SYSTEMS: x64</text>
+  <text x="645" y="33" fill="#38BDF8" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="1.5">MISSION: SIMERAH KOJA & PLN</text>
 
-  <!-- Background Space Stars -->
-  <circle cx="55" cy="75" r="1.5" fill="#FFFFFF" class="star-1" />
-  <circle cx="195" cy="68" r="2" fill="#38BDF8" class="star-2" />
-  <circle cx="240" cy="110" r="1" fill="#FFFFFF" class="star-1" />
-  <circle cx="70" cy="215" r="1.5" fill="#38BDF8" class="star-2" />
-  <circle cx="220" cy="220" r="1.5" fill="#FFFFFF" class="star-1" />
-  <circle cx="140" cy="95" r="1" fill="#FACC15" class="star-2" />
+  <!-- Animated Twinkling Space Stars -->
+  <circle cx="48" cy="72" r="1.5" fill="#FFFFFF">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="195" cy="68" r="2" fill="#38BDF8">
+    <animate attributeName="opacity" values="1;0.1;1" dur="1.7s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="242" cy="96" r="1.2" fill="#FACC15">
+    <animate attributeName="opacity" values="0.1;1;0.1" dur="2.8s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="62" cy="232" r="1.8" fill="#38BDF8">
+    <animate attributeName="opacity" values="0.9;0.2;0.9" dur="2.4s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="218" cy="240" r="1.5" fill="#FFFFFF">
+    <animate attributeName="opacity" values="0.2;1;0.2" dur="1.9s" repeatCount="indefinite" />
+  </circle>
+  <circle cx="145" cy="84" r="1.5" fill="#A78BFA">
+    <animate attributeName="opacity" values="1;0.2;1" dur="3.2s" repeatCount="indefinite" />
+  </circle>
 
-  <!-- Floating Pixel Astronaut & Flashlight Beam (Left Scene) -->
-  <g class="astronaut">
-    <!-- Tether Cord -->
-    <path d="M 14 165 Q 55 185 88 152" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="3 3" />
-    <!-- Flashlight Cone Beam -->
-    <polygon points="122,146 285,105 285,190" fill="#38BDF8" class="beam" />
-    <!-- Pixel Astronaut Body -->
-    <g transform="translate(82, 122)">
-      <!-- Backpack -->
-      <rect x="2" y="10" width="8" height="20" rx="2" fill="#94A3B8" />
+  <!-- Orbiting Radar Ring Behind Astronaut -->
+  <g transform="translate(115, 160)">
+    <circle cx="0" cy="0" r="56" fill="none" stroke="#1E3A8A" stroke-width="1" stroke-dasharray="5 5">
+      <animateTransform attributeName="transform" type="rotate" from="0 0 0" to="360 0 0" dur="18s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#0284C7" stroke-width="0.8" stroke-opacity="0.5" />
+  </g>
+
+  <!-- Tether Line -->
+  <path d="M 14 185 Q 55 205 92 165" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4 4">
+    <animate attributeName="stroke-dashoffset" values="0;16" dur="1.5s" repeatCount="indefinite" />
+  </path>
+
+  <!-- Floating Pixel Astronaut + Flashlight Beam -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-9; 0,0" dur="3.4s" repeatCount="indefinite" />
+    <!-- Flashlight Beam Cone -->
+    <polygon points="128,154 285,105 285,205" fill="url(#beamLight)">
+      <animate attributeName="opacity" values="0.45;0.95;0.45" dur="2.4s" repeatCount="indefinite" />
+    </polygon>
+    <!-- Pixel Astronaut Character -->
+    <g transform="translate(86, 128)">
+      <!-- Jetpack & Thruster Flame -->
+      <rect x="0" y="12" width="8" height="20" rx="2" fill="#64748B" />
+      <rect x="2" y="33" width="4" height="7" fill="#FACC15">
+        <animate attributeName="height" values="4;10;4" dur="0.4s" repeatCount="indefinite" />
+      </rect>
       <!-- Helmet -->
-      <rect x="10" y="0" width="22" height="18" rx="4" fill="#FFFFFF" />
-      <!-- Visor -->
-      <rect x="18" y="4" width="12" height="10" rx="2" fill="#FACC15" />
-      <!-- Suit Body -->
-      <rect x="10" y="18" width="20" height="18" rx="2" fill="#F8FAFC" />
-      <rect x="15" y="22" width="10" height="8" fill="#38BDF8" />
-      <!-- Arms & Flashlight -->
-      <rect x="26" y="20" width="10" height="6" fill="#FFFFFF" />
-      <rect x="36" y="19" width="5" height="8" fill="#FACC15" />
+      <rect x="8" y="0" width="24" height="20" rx="4" fill="#F8FAFC" />
+      <!-- Glowing Gold Visor -->
+      <rect x="16" y="4" width="14" height="11" rx="2" fill="#FACC15" />
+      <rect x="18" y="6" width="6" height="3" fill="#FEF08A" />
+      <!-- Space Suit Torso -->
+      <rect x="8" y="20" width="22" height="18" rx="2" fill="#E2E8F0" />
+      <rect x="13" y="24" width="12" height="9" rx="1" fill="#0284C7" />
+      <rect x="15" y="26" width="4" height="4" fill="#38BDF8">
+        <animate attributeName="opacity" values="1;0.2;1" dur="1s" repeatCount="indefinite" />
+      </rect>
+      <!-- Arm & Flashlight -->
+      <rect x="26" y="22" width="11" height="6" rx="1" fill="#F8FAFC" />
+      <rect x="37" y="20" width="6" height="10" rx="1" fill="#FACC15" />
       <!-- Legs -->
-      <rect x="11" y="36" width="7" height="10" fill="#E2E8F0" />
-      <rect x="22" y="36" width="7" height="10" fill="#E2E8F0" />
+      <rect x="9" y="38" width="8" height="11" rx="1" fill="#CBD5E1" />
+      <rect x="21" y="38" width="8" height="11" rx="1" fill="#CBD5E1" />
+      <!-- Boots -->
+      <rect x="9" y="47" width="9" height="4" fill="#38BDF8" />
+      <rect x="21" y="47" width="9" height="4" fill="#38BDF8" />
     </g>
   </g>
 
-  <!-- Right Main HUD Card -->
-  <rect x="285" y="60" width="580" height="172" rx="6" fill="url(#cardGrad)" stroke="#1E40AF" stroke-width="1.2" />
+  <!-- Right Main HUD Command Card -->
+  <rect x="285" y="60" width="582" height="190" rx="8" fill="url(#hudCard)" stroke="#1D4ED8" stroke-width="1.5" />
 
-  <!-- Class Badge -->
-  <rect x="305" y="76" width="310" height="22" rx="3" fill="#0F294A" stroke="#0284C7" stroke-width="0.8" />
-  <text x="315" y="91" fill="#38BDF8" font-size="10.5" font-weight="bold" letter-spacing="1.8" class="mono">FULLSTACK & MOBILE ARCHITECT // CLASS S</text>
+  <!-- Class Header Pill -->
+  <rect x="305" y="76" width="325" height="24" rx="4" fill="#0F294A" stroke="#0284C7" stroke-width="1" />
+  <text x="316" y="92" fill="#38BDF8" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="1.6">STELLAR SYSTEM ARCHITECT // CLASS S</text>
 
-  <!-- Main Name -->
-  <text x="305" y="132" fill="#FFFFFF" font-size="31" letter-spacing="3.5" class="title">LELEKRECING</text>
+  <!-- Equalizer Bars Top Right of Card -->
+  <g transform="translate(805, 76)">
+    <rect x="0" y="8" width="4" height="14" fill="#38BDF8">
+      <animate attributeName="height" values="6;20;6" dur="1s" repeatCount="indefinite" />
+      <animate attributeName="y" values="16;2;16" dur="1s" repeatCount="indefinite" />
+    </rect>
+    <rect x="8" y="2" width="4" height="20" fill="#22C55E">
+      <animate attributeName="height" values="20;6;20" dur="0.8s" repeatCount="indefinite" />
+      <animate attributeName="y" values="2;16;2" dur="0.8s" repeatCount="indefinite" />
+    </rect>
+    <rect x="16" y="10" width="4" height="12" fill="#FACC15">
+      <animate attributeName="height" values="8;22;8" dur="1.2s" repeatCount="indefinite" />
+      <animate attributeName="y" values="14;0;14" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+    <rect x="24" y="4" width="4" height="18" fill="#A78BFA">
+      <animate attributeName="height" values="18;5;18" dur="0.9s" repeatCount="indefinite" />
+      <animate attributeName="y" values="4;17;4" dur="0.9s" repeatCount="indefinite" />
+    </rect>
+  </g>
 
-  <!-- Stack Subtitle -->
-  <text x="305" y="156" fill="#93C5FD" font-size="11.5" font-weight="bold" letter-spacing="1.4" class="mono">PHP • LARAVEL • JS • NODE.JS • FLUTTER • DART • SQL</text>
+  <!-- Main Developer Title -->
+  <text x="305" y="134" fill="#FFFFFF" font-family="Segoe UI, Roboto, Helvetica, sans-serif" font-size="33" font-weight="900" letter-spacing="3.5">LELEKRECING</text>
 
-  <!-- Terminal Command Prompt -->
-  <text x="305" y="185" fill="#E2E8F0" font-size="11.5" font-weight="bold" letter-spacing="1.3" class="mono">> CHARTING SCALABLE WEB & MOBILE UNIVERSES<tspan fill="#38BDF8" class="blink-dot">_</tspan></text>
+  <!-- Full 8-Stack Subtitle -->
+  <text x="305" y="158" fill="#93C5FD" font-family="Courier New, monospace" font-size="11.5" font-weight="bold" letter-spacing="1.3">PHP • LARAVEL • JS • NODE.JS • FLUTTER • DART • MYSQL • POSTGRES</text>
 
-  <!-- Bottom Card Status & Animated Power Bar -->
-  <line x1="305" y1="198" x2="845" y2="198" stroke="#1E3A5F" stroke-width="1" />
-  <text x="305" y="216" fill="#64748B" font-size="10.5" font-weight="bold" letter-spacing="1.2" class="mono">SYS: <tspan fill="#22C55E">ONLINE</tspan> | DB: <tspan fill="#38BDF8">MYSQL & POSTGRES</tspan> | PWR: <tspan fill="#E2E8F0">100%</tspan></text>
-  <rect x="755" y="207" width="80" height="8" rx="4" fill="#0F172A" stroke="#1E3A5F" stroke-width="1" />
-  <rect x="757" y="209" width="70" height="4" rx="2" fill="#38BDF8" class="pwr-bar" />
+  <!-- Animated Terminal Prompt -->
+  <text x="305" y="188" fill="#E2E8F0" font-family="Courier New, monospace" font-size="12" font-weight="bold" letter-spacing="1.2">> CHARTING THE DIGITAL UNIVERSE_WEB & MOBILE<tspan fill="#38BDF8">█<animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite" /></tspan></text>
+
+  <!-- Bottom Card Telemetry & Power Bar -->
+  <line x1="305" y1="208" x2="846" y2="208" stroke="#1E3A5F" stroke-width="1" />
+  <text x="305" y="229" fill="#64748B" font-family="Courier New, monospace" font-size="11" font-weight="bold" letter-spacing="1.2">SYS: <tspan fill="#22C55E">ONLINE</tspan> | RADAR: <tspan fill="#38BDF8">ACTIVE</tspan> | DB: <tspan fill="#FACC15">SQL READY</tspan> | PWR: <tspan fill="#E2E8F0">100%</tspan></text>
+
+  <rect x="760" y="219" width="84" height="10" rx="5" fill="#09152B" stroke="#0284C7" stroke-width="1" />
+  <rect x="762" y="221" width="80" height="6" rx="3" fill="#38BDF8">
+    <animate attributeName="width" values="15;80;15" dur="4s" repeatCount="indefinite" />
+  </rect>
 </svg>
