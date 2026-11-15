@@ -58,6 +58,15 @@
 .u1{animation:up .8s ease-out both}.u2{animation:up .8s .25s ease-out both}.u3{animation:up .8s .5s ease-out both}.u4{animation:up .8s .75s ease-out both}
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 
+@keyframes idle{0%,100%{transform:rotate(-.8deg)}50%{transform:rotate(.8deg)}}
+@keyframes bglow{0%,100%{opacity:.12}50%{opacity:.4}}
+@keyframes scarf{0%,100%{transform:rotate(-5deg) skewY(0)}50%{transform:rotate(7deg) skewY(4deg)}}
+@keyframes hem{0%,100%{transform:skewX(-1.5deg)}50%{transform:skewX(1.5deg)}}
+.idle{transform-box:fill-box;transform-origin:50% 100%;animation:idle 5s ease-in-out infinite}
+.bg2{animation:bglow 2.4s ease-in-out infinite}
+.sc{transform-box:fill-box;transform-origin:100% 50%;animation:scarf 2.2s ease-in-out infinite}
+.hm{transform-box:fill-box;transform-origin:50% 0;animation:hem 3.4s ease-in-out infinite}
+
 @keyframes slide{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
 .r{animation:slide .7s ease-out both}</style>
 <g clip-path="url(#c)"><rect width="900" height="260" fill="url(#cd)"/>
@@ -68,29 +77,29 @@
 <g transform="translate(0,4)"><circle cy="30" r="50" fill="url(#glow)" class="gp"/><rect x="-10" y="0" width="20" height="5" rx="2" fill="#F5C451"/><ellipse cy="30" rx="21" ry="27" fill="url(#lantern)"/>
 <g stroke="#7F1D1D" stroke-width="1.2" opacity=".7" fill="none"><ellipse cy="30" rx="21" ry="9"/><ellipse cy="30" rx="21" ry="18"/></g>
 <rect x="-10" y="54" width="20" height="5" rx="2" fill="#F5C451"/><text y="39" text-anchor="middle" fill="#FEF3C7" font-size="22" font-weight="bold" style="font-family:'Yu Mincho','MS Mincho','Hiragino Mincho ProN','Noto Serif CJK JP','Noto Serif JP',serif">侍</text>
-<path d="M-5 59V76M0 59V80M5 59V76" stroke="#F5C451" stroke-width="1.4"/></g></g></g><g transform="translate(868,0)"><g class="lan" style="animation-delay:1.2s"><line x1="0" y1="0" x2="0" y2="0" stroke="#6B7280" stroke-width="1.6"/>
-<g transform="translate(0,0)"><circle cy="30" r="50" fill="url(#glow)" class="gp"/><rect x="-10" y="0" width="20" height="5" rx="2" fill="#F5C451"/><ellipse cy="30" rx="21" ry="27" fill="url(#lantern)"/>
-<g stroke="#7F1D1D" stroke-width="1.2" opacity=".7" fill="none"><ellipse cy="30" rx="21" ry="9"/><ellipse cy="30" rx="21" ry="18"/></g>
-<rect x="-10" y="54" width="20" height="5" rx="2" fill="#F5C451"/><text y="39" text-anchor="middle" fill="#FEF3C7" font-size="22" font-weight="bold" style="font-family:'Yu Mincho','MS Mincho','Hiragino Mincho ProN','Noto Serif CJK JP','Noto Serif JP',serif">侍</text>
 <path d="M-5 59V76M0 59V80M5 59V76" stroke="#F5C451" stroke-width="1.4"/></g></g></g>
-<g transform="translate(740,104) scale(.7)"><g class="bc">
-<g><path d="M44 104L-64 -30" stroke="#4B5563" stroke-width="12" stroke-linecap="round"/><path d="M44 104L-64 -30" stroke="#111827" stroke-width="8" stroke-linecap="round"/>
-<path d="M44 104L-64 -30" stroke="#F5C451" stroke-width="1.6" opacity=".7" pathLength="100" class="gl"/>
-<path d="M-64 -30L-80 -50" stroke="#B91C1C" stroke-width="11" stroke-linecap="round"/><path d="M-66 -32L-80 -49" stroke="#0B0B10" stroke-width="2" stroke-dasharray="3 5"/>
-<ellipse cx="-62" cy="-28" rx="11" ry="5" transform="rotate(50 -62 -28)" fill="#F5C451"/><circle cx="-82" cy="-52" r="4.5" fill="#F5C451"/>
-<rect x="38" y="96" width="14" height="5" rx="2" transform="rotate(50 45 100)" fill="#F5C451"/></g>
-<g class="hb"><path d="M10 -62C40 -84 74 -78 86 -40C90 -8 74 24 58 44C70 8 66 -20 52 -36C40 -46 24 -48 10 -44Z" fill="url(#hair)"/>
+<g transform="translate(742,76) scale(.62)"><g class="idle"><g class="hb"><path d="M10 -62C40 -84 74 -78 86 -40C90 -8 74 24 58 44C70 8 66 -20 52 -36C40 -46 24 -48 10 -44Z" fill="url(#hair)"/>
 <rect x="6" y="-70" width="16" height="9" rx="3" fill="#B91C1C" transform="rotate(-18 14 -66)"/></g>
-<path d="M-36 48Q-46 100 -52 134Q0 146 52 134Q46 100 36 48Q0 60 -36 48Z" fill="url(#hood)"/>
-<g fill="none" stroke="#fff" stroke-width="1.6" opacity=".2"><path d="M-40 104q6-8 12 0t12 0t12 0t12 0t12 0t12 0t12 0"/><path d="M-36 124q6-8 12 0t12 0t12 0t12 0t12 0t12 0"/></g>
-<path d="M-18 48L0 88L18 48" fill="none" stroke="#F8FAFC" stroke-width="6" stroke-linejoin="round"/>
-<path d="M-48 98Q0 112 48 98L50 114Q0 128 -50 114Z" fill="#B91C1C"/><path d="M-48 98Q0 112 48 98" fill="none" stroke="#F5C451" stroke-width="1.8" opacity=".8"/>
-<circle cx="0" cy="110" r="7" fill="#F5C451"/><circle cx="0" cy="110" r="3" fill="#7F1D1D"/>
-<circle cx="-26" cy="72" r="6.5" fill="none" stroke="#F5C451" stroke-width="1.6"/><circle cx="-26" cy="72" r="2" fill="#F5C451"/>
-<g class="gp"><rect x="-90" y="132" width="180" height="20" rx="10" fill="#0A0709" stroke="#EF4444" stroke-width="2.4"/></g>
-<rect class="kf" x="-80.0" y="138" width="9.5" height="8" rx="2.5" fill="#EF4444" style="animation-delay:0.00s"/><rect class="kf" x="-66.5" y="138" width="9.5" height="8" rx="2.5" fill="#F5C451" style="animation-delay:0.13s"/><rect class="kf" x="-53.0" y="138" width="9.5" height="8" rx="2.5" fill="#FCA5A5" style="animation-delay:0.26s"/><rect class="kf" x="-39.5" y="138" width="9.5" height="8" rx="2.5" fill="#EF4444" style="animation-delay:0.39s"/><rect class="kf" x="-26.0" y="138" width="9.5" height="8" rx="2.5" fill="#F5C451" style="animation-delay:0.52s"/><rect class="kf" x="-12.5" y="138" width="9.5" height="8" rx="2.5" fill="#FCA5A5" style="animation-delay:0.65s"/><rect class="kf" x="1.0" y="138" width="9.5" height="8" rx="2.5" fill="#EF4444" style="animation-delay:0.78s"/><rect class="kf" x="14.5" y="138" width="9.5" height="8" rx="2.5" fill="#F5C451" style="animation-delay:0.91s"/><rect class="kf" x="28.0" y="138" width="9.5" height="8" rx="2.5" fill="#FCA5A5" style="animation-delay:1.04s"/><rect class="kf" x="41.5" y="138" width="9.5" height="8" rx="2.5" fill="#EF4444" style="animation-delay:0.07s"/><rect class="kf" x="55.0" y="138" width="9.5" height="8" rx="2.5" fill="#F5C451" style="animation-delay:0.20s"/><rect class="kf" x="68.5" y="138" width="9.5" height="8" rx="2.5" fill="#FCA5A5" style="animation-delay:0.33s"/>
-<g class="aL"><path d="M-32 66L-42 120" stroke="url(#hood)" stroke-width="22" stroke-linecap="round"/><path d="M-43 108L-41 118" stroke="#B91C1C" stroke-width="22" stroke-linecap="round"/><circle cx="-42" cy="126" r="9" fill="#F7D2BC"/></g>
-<g class="aR"><path d="M32 66L42 120" stroke="url(#hood)" stroke-width="22" stroke-linecap="round"/><path d="M43 108L41 118" stroke="#B91C1C" stroke-width="22" stroke-linecap="round"/><circle cx="42" cy="126" r="9" fill="#F7D2BC"/></g>
+<g class="hm"><path d="M-48 118L48 118L68 184L-68 184Z" fill="#1E1B4B"/>
+<path d="M-24 120L-30 184M0 120L0 184M24 120L30 184" stroke="#312E81" stroke-width="2"/><path d="M-66 178L66 178" stroke="#F5C451" stroke-width="2.2" opacity=".85"/></g>
+<rect x="-46" y="184" width="30" height="7" rx="2" fill="#3F2A1A"/><rect x="16" y="184" width="30" height="7" rx="2" fill="#3F2A1A"/>
+<path d="M-34 48Q-40 82 -44 116L44 116Q40 82 34 48Q0 58 -34 48Z" fill="url(#hood)"/>
+<g fill="none" stroke="#fff" stroke-width="1.5" opacity=".18"><path d="M-38 90q6-8 12 0t12 0t12 0t12 0t12 0t12 0"/></g>
+<path d="M-18 48L0 90L18 48" fill="none" stroke="#F8FAFC" stroke-width="6" stroke-linejoin="round"/>
+<path d="M-48 104Q0 118 48 104L50 122Q0 136 -50 122Z" fill="#B91C1C"/><path d="M-48 104Q0 118 48 104" fill="none" stroke="#F5C451" stroke-width="1.8" opacity=".85"/>
+<circle cx="0" cy="116" r="7" fill="#F5C451"/><circle cx="0" cy="116" r="3" fill="#7F1D1D"/>
+<g class="sc"><path d="M-30 44Q-78 34 -112 62L-98 74Q-76 56 -36 62Z" fill="#DC2626"/><path d="M-30 50Q-80 52 -104 90L-90 94Q-72 70 -34 64Z" fill="#B91C1C"/></g>
+<path d="M-36 76L46 84" stroke="#111827" stroke-width="22" stroke-linecap="round"/><path d="M36 58L60 64" stroke="#111827" stroke-width="22" stroke-linecap="round"/>
+<path d="M-8 76L-30 52" stroke="none"/>
+<path d="M36 90L66 54" stroke="#B91C1C" stroke-width="9" stroke-linecap="round"/><path d="M38 88L64 56" stroke="#0A0709" stroke-width="2" stroke-dasharray="3 5"/>
+<circle cx="46" cy="80" r="9" fill="#F7D2BC"/><circle cx="62" cy="62" r="9" fill="#F7D2BC"/>
+<ellipse cx="72" cy="48" rx="13" ry="5.5" transform="rotate(-54 72 48)" fill="#F5C451" stroke="#B45309" stroke-width="1.2"/>
+<path d="M76 42L170 -92" stroke="#FEF3C7" stroke-width="14" stroke-linecap="round" class="bg2"/>
+<path d="M76 42L170 -92" stroke="#CBD5E1" stroke-width="6" stroke-linecap="round"/><path d="M76 41L169 -92" stroke="#F8FAFC" stroke-width="2.4" stroke-linecap="round"/>
+<path d="M76 42L170 -92" stroke="#fff" stroke-width="3" stroke-linecap="round" pathLength="100" class="gl"/>
+<use href="#star4" class="tw" transform="translate(170,-92) scale(1.8)" fill="#fff"/>
+<path d="M-56 44Q-40 34 -22 50L-26 78Q-42 86 -58 70Z" fill="#1A1A24" stroke="#F5C451" stroke-width="1.6"/><path d="M-54 56L-28 60M-55 64L-28 68" stroke="#DC2626" stroke-width="2.2"/>
+<path d="M56 44Q40 34 22 50L26 70Q42 76 58 64Z" fill="#1A1A24" stroke="#F5C451" stroke-width="1.6"/><path d="M54 54L28 58" stroke="#DC2626" stroke-width="2.2"/>
 <ellipse cx="0" cy="2" rx="55" ry="50" fill="url(#skin)"/>
 <ellipse cx="-34" cy="22" rx="9" ry="5" fill="#FB7185" opacity=".25"/><ellipse cx="34" cy="22" rx="9" ry="5" fill="#FB7185" opacity=".25"/>
 <g class="eye"><ellipse cx="-23" cy="10" rx="11" ry="13" fill="#fff"/><ellipse cx="-23" cy="11" rx="9" ry="11.5" fill="url(#iris)"/><ellipse cx="-23" cy="12" rx="3.8" ry="6.5" fill="#1A0505"/><circle cx="-27" cy="5.5" r="3.8" fill="#fff"/><circle cx="-19" cy="17" r="1.8" fill="#fff" opacity=".9"/></g>
